@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rose.io.ico" type="image/x-icon">
+    <title>Outras formas de formatação</title>
+</head>
+<body>
+    <h1>Outras formas de formatação</h1>
+    <h2>Código - fonte</h2>
+    <p>O comando <code>document.getElementByle("teste")</code> é escrito em linguagem JavaScript. (Para um melhor espaçamento entre as letras, utilizamos a tag <strong>&lt;code&gt;</strong> como foi o caso da frase document.getElementByle("teste"))</p>
+    <pre>
+        <code>
+            num = int(input('Digite um num'))
+            if num % 2 == 0:
+              print (f'0 numero {num} é PAR)
+            else: 
+              print (f'0 numero {num} é ÍMPAR)
+            print ('Fim do programa')
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o cantor e compositor Dudu Falcão, <q>Meu conhecimento é minha distração</q>. (Nesta frase adicionamos as aspas usando a tag <strong>&lt;q&gt;</strong>(sematica)) </p>
+    <h2>Citações completas</h2>
+    <p>Lewis Caroll, autor dos livros Alice no país das maravilhas, compõe uma frase muito interessante em seu primeiro livro:</p>
+    <blockquote cite="https://www.baixelivros.com.br/literatura-estrangeira/alice-no-pais-das-maravilhas"> Quando acordei hoje de manhã, eu sabia quem eu era, mas acho que já mudei muitas vezes desde então.</blockquote>
+    <p>(Neste caso, usamos a tag <strong>&lt;blockquote&gt;</strong> para criar este tipo de citação. Ela faz a quebra e o espaçamento de linha. Também temos a opção de adicionar o <strong>cite</strong> dentro da tag de abertura <strong>&lt;blockquote&gt;</strong> e colocarmos algum link referente a citação.)</p>
+    <h2>Abreviações</h2>
+    <p>Estou aprendendo <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> em vídeo aulas no YouTube. </p>
+    <p>(Para criar este efeito de aparecer o nome ao passar o mouse, precisamos adicionar a tag <strong>&lt;abbr&gt;</strong>, e dentro da tag de abretura <strong>&lt;abbr&gt;</strong> adicionarmos <strong>title</strong> e então escrevermos o nome que desejamos que apareça.)</p>
+    <h2>Texto Invertido</h2>
+    <p>A tag inútil, que dizer cof cof, a tag para inverter o texto é a <strong>&lt;bdo&gt;</strong>. Ex: <bdo dir="rtl">Entender essa tag o mestre Yoda deve!</bdo></p>
+</body>
+</html>

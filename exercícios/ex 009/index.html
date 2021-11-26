@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rose.io.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="1">
+        <li>Acordar(8h)</li>
+        <li>Escovar os dentes / lavar o rosto</li>
+        <li>Arrumar o quarto</li>
+        <li>Tomar café da manhã</li>
+        <li>Limpar a casa</li>
+        <li>Estudar</li>
+        <li>Almoçar / Escovar os dentes</li>
+        <li>Levar a Isa para escola</li>
+        <li>Tomar banho</li>
+        <li>Estudar</li>
+        <li>Lanchar (Incluir alguma fruta)</li>
+        <li>Estudar</li>
+        <li>Auxiliar a minha avó nas lições</li>
+        <li>Tempo livre</li>
+        <li>Ler um capitulo do livro antes de dormir</li>
+    </ol>
+    <p>Adicionamos a tag <strong>&lt;ol&gt;</strong> para iniciar uma Lista Ordenada, e a tag <strong>&lt;li&gt;</strong> para adicionar os componentes da lista. Geralmente a lista é ordenada por sequenvcias numericas (item 1, 2, 3...) mas caso queira mudar, podemos usar dentro da tag de abertura <strong>&lt;ol&gt;</strong> <strong>type=""</strong> ou caso queira mudar o inicio da númeração, podemos usar <strong>start="número desejado"</strong> </p>
+    <h2>Listas NÃO ordenada</h2>
+    <ul type="Circle"> <!--Disc Circle Square-->
+    <li>Mesa de alumínio</li>
+    <li>Carrinho</li>
+    <li>2 Garrafas Térmicas</li>
+    <li>Caixinha de isopor</li>
+    <li>Potinhos</li>
+    <li>Saquinhos transparentes</li>
+    <li>Copos descartáveis com tampa</li>
+    <li>Copos de 50ml</li>
+    <li>Saquinhos para viagem (pequenos e médios)</li>
+    <li>Saquinhos de açucar</li>
+    </ul>
+    <p>Neste caso, adicionamos a tag <strong>&lt;ul&gt;</strong> para iniciar uma Lista NÃO Ordenada, e a tag <strong>&lt;li&gt;</strong> para adicionar os componentes da lista (os itens não recebem uma numeração).</p>
+    <h2>Juntando Listas 1.0</h2>
+    <ol>
+        <li>Linguagens que estou aprendendo</li>
+        <ol type="a">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ol>
+        <li>Linguagens que ainda quero aprender</li>
+        <ol type="a" start="5">
+          <li>Php</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ol>
+    </ol>
+    <h2>Musicas Favoritas</h2>
+    <ol>
+     <li>Michael Jackson</li>
+     <ul type="disc">
+     <li>Musicas atuais</li>
+     </ul>
+     <ul type="circle">
+         <li>You rock my world</li>
+         <li>Hollywood Tonight</li>
+     </ul>
+     <li>Jorge Vercollo</li>
+     <ul type="disc">
+     <li>Musicas atuais</li>
+     </ul>
+     <ul type="circle">  
+          <li>Ela une todas as coisas</li>
+         <li>Homem - Aranha</li>
+     </ul>
+    </ol>
+    <p>Neste caso, podemos fazer a junção de ambas as listas, dividindo-a em <q>paragrafos</q>. Usando a tag <strong>&lt;ol&gt;</strong> para iniciar a lista, e a tag <strong>&lt;ul&gt;</strong>, não se esquecendo tambem da tag <strong>&lt;li&gt;</strong>. type="--Disc" </p>
+    <h2>Lista de Definição</h2>
+    <dt>HTML</dt>
+    <dd>HTML é uma linguagem de marcaçaõ usada para a criação de conteúdo de sites.</dd>
+    <dt>CSS</dt>
+    <dd>CSS também é uma linguagem de marcação usada para dar estilo ou design aos sites.</dd>
+    <dt>JavaScript</dt>
+    <dd>JavaScript é a Linguagem de programação responsável pelas interações dos sites.</dd>
+</body>
+</html>

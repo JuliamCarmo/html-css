@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rose.io.ico" type="image/x-icon">
+    <title>Vídeos com html5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo esta hospedado no meu próprio servidor.</p>
+
+    <video width="560" poster="imagens/imagem01.jpg" controls loop>
+
+        <source src="midia/Video-m4v-5823521.m4v" type="video/mp4">
+        <source src="midia/Video-webm-5823521.webm" type="video/webm">
+        <source src="midia/video-5823521.mp4" type="video/mp4">
+        <p>Seu navegador não permite a reprodução de vídeos.</p>
+        
+    </video>
+    <h2>Bora ver a parte tecnica bro</h2>
+    <p>Para adicionarmos um vídeo em HTML5, precisamos das seguintes tags:</p>
+    <pre>
+        <code>
+          <strong>&lt;video width="500" poster="imagens/imagem01.jpg" controls&gt;</strong> 
+          <strong>&lt;source src="midia/Video-m4v-5823521.m4v" type="video/mp4"&gt;</strong> 
+          <strong>&lt;source src="midia/Video-webm-5823521.webm" type="video/webm"&gt;</strong>
+          <strong>&lt;source src="midia/video-5823521.mp4" type="video/mp4"&gt;</strong>
+        </code>
+    </pre>
+    <p>É importante usarmos formas diferentes de reprodução de vídeos para diferentes tipos de navegadores conseguirem assistir ao vídeo (m4v, webm, mp4 e ogv são os mais utilizados).</p>
+    <p>O vídeo utilizado foi retirado da pagina <a href="https://www.pexels.com/pt-br/" target="_blank" rel="external">Pexel</a></p>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Se liga nesse trailer de Halo 5</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rh_NXwqFvHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Este vídeo foi buscado do canal do YouTube. Para isso precisamos seguir os seguintes passos <strong> Buscar pelo vídeo desejado (conferir os direitos autorais) -> Clicar na opção compartilhar -> Incorporar -> Copiar (ctrl C) e colar na pagina de programação (ctrl V).</strong> A nossa maior vantagem em utilizar este método, é não estarmos utilizando dados do nosso servidor de hospedagem, porem, o Youtube irá mostrar seus anuncios na nossa página atraves do vídeo que adicionamos.</p>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <p>Outro videozinho do incrivel Halo 5</p>
+    <iframe src="https://player.vimeo.com/video/68040590?h=48443c038e&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <p>Neste caso, o vídeo que inserimos veio atraves da pagina <a href="https://vimeo.com/68040590" target="_blank" rel="external">Vimeo</a>. Nela temos mais opções de configuração e uma qualidade superior aos vídeos do youtube, sem anuncios externos.</p>
+</body>
+</html>

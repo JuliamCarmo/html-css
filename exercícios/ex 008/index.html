@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rose.io.ico" type="image/x-icon">
+    <title> Formatação de texto</title>
+    <style>
+        mark{
+            background-color: rgb(245, 140, 201);
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nesta frase temos um <b>termo em negito</b> usando a tag &lt; b &gt; (não semantica)
+    <br>Nesta frase temos um <strong>termo em destaque</strong> usando a tag &lt; strong &gt; (semantica)</p>
+    <h2>Itálico / Enfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag &lt; i &gt; (não semantica) <br>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt; em &gt; (semantica) <br>(é recomendado que se utilize preferencialmente as tags &lt; strong &gt; quando necessario usar <strong>negrito</strong> e a tag &lt; em &gt; quando necessario usar <em>italico</em>) </p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color: rgb(97, 154, 201);">um texto marcado</mark> utilizando a tag &lt;mark&gt;. <br>(Para mudar a cor da marcação, devemos utilizar a CSS <strong>style</strong> dentra da tag de abretura &lt;mark&gt;, e então escolher a opção <strong>background-color</strong>)</p> 
+    <p>(<strong>OBS:</strong> Caso esteja escrevendo um texto que exitem <mark>muitos trechos grifados,</mark> o ideal e mais prático, é que você crie abaixo da tag <strong>&lt;title&gt;</strong> uma tag <strong>&lt;style&gt;</strong> e dentro da tag style crie a tag <strong>&lt;mark&gt;</strong> e então escolha a opção <strong>background-color</strong> e defina uma cor para grifar todas as palavras ou frases marcadas. <br> <strong>Ex:</strong> <mark>"Meu conhecimento é a minha distração</mark>, coisas que eu sei...<mark>medo mora perto das ideias loucas".</mark> </p>
+    <h2>Textos grandes e pequenos</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste paragrafo. <br>Para criar frases com letras um pouco maiores, basta utilizar a tag <strong>&lt;big&gt;</strong> (Contudo, é importante resaltar que a tag &lt;big&gt; já esta obsoleta de acordo com a W3C). <br> Para criar frases um pouco menores, basta utilizar a tag <strong>&lt;small&gt;</strong> (De acotrdo com a W3C, essa tag ainda não esta obsoleta).</p>
+    <h2>Texto Deletado</h2>
+    <p>Podemos marcar<del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado. (Para isso utilizamos a tag <strong>&lt;del&gt;</strong>)</p>
+    <p>Podemos marcar <ins>um texto como incerido</ins>  para dar ênfase e indicar que ele foi adicionado depois. (Para isso utilizamos a tag <strong>&lt;ins&gt;</strong>, lembrando que a tag <strong>&lt;ins&gt;</strong> é uma tag semântica) <br>Existe também <u>o sublinho</u> com a tag <strong>&lt;u&gt;</strong> (não semântica). </p>
+    <h2>Texto Sobrescrito</h2>
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3. (Neste caso utilizamos a tag <strong>&lt;sup&gt;)</strong> </p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir coisas do tipo H<sub>2</sub>O. (Neste caso utilizamos a tag <strong>&lt;sub&gt;)</p>
+</body>
+</html>

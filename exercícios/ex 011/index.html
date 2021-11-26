@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Rose.io.ico" type="image/x-icon">
+    <title>Midias de HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir este site em vários dispositivos diferentes, ou simplesmete aumente e diminua o tamanho so seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/imagem.p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/imagem.m.png" type="image/png">
+        <img src="imagens/imagem.g.png" alt="imagemzinha grande">
+    </picture>
+    <h2>Bora ver a parte tecnica dessa bagaceira</h2>
+    <p>Apesar de ser trabalhoso precisar criar diferentes tamanhos de imagens, é gostosinho ver o site se adaptando e ficando bonitnho quando aumentamos e diminuimos a pagina.</p>
+    <p>Quando estivermos organizando a sequencia das fotos, é muito importante que seja organizado de baixo para cima, iniciando sempre pela imagem grande! As tags que utilizamos são:</p>
+   
+    <pre>
+        <code>
+            &lt; <strong>source media="(max-width:750px)" srcset=</strong>"imagens/imagem.p.png" <strong>type=</strong>"image/png" &gt;
+            &lt; <strong>source media="(max-width:1050px)" srcset=</strong>"imagens/imagem.m.png" <strong>type=</strong>"image/png" &gt;
+            &lt; <strong>img src=</strong> "imagens/imagem.g.png" <strong>alt=</strong> "imagemzinha grande" &gt;
+        </code>
+    </pre>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos apender a reproduzir audio em HTML5</p>
+    <audio src="midia/8bit dreamscape the whole other.mp3" controls autoplay></audio> <!--MP3 WAV OGG-->
+    <p>Temos também outras opções de adicionar musiquinhas</p>
+    <audio preload="metadata" controls>
+    <source src="midia/all the fixings zachariah hickman.mp3" type="audio/mpeg">
+    <source src="midia/all the fixings zachariah hickman.ogg" type="audio/ogg">
+    <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="midia/all the fixings zachariah hickman.mp3">Clic aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <h2>Bora ver a parte tecnica bro</h2>
+    <p>Para adicionarmos um audio a nossa pagina, antes de qualquer coisa, precisamos nos lembrar dos direitos autorais antes de baixa-lo e usarmos. <br>As tags que utilizamos são as: <br><strong>&lt;audio src=</strong>"midia/8bit dreamscape the whole other.mp3" <strong>controls autoplay</strong>&gt;</p>
+    <p>Também temos outras opções de formato de audio, que seria alem do MP3, o OGG e a WAV (a WAV infelizmente é um formato muito pesado, por isso não é muit recomendada). Esses outros dois formatos serão acionados caso o navegador do usuario não consiga reprodizir o audio primeiro em MP3. Fazemos isso usando as seguintes tags:</p>
+    <pre>
+        <code>
+            <strong>&lt;source src=</strong>"midia/all the fixings zachariah hickman.mp3" <strong> type=</strong>"audio/mpeg"&gt;
+            <strong>&lt;source src=</strong>"midia/all the fixings zachariah hickman.ogg" <strong> type=</strong>"audio/ogg"&gt;
+        </code>
+    </pre>
+
+    <p>Caso ainda assim nenhuma das tres opções funcione no navegador do usuario, podemos adicionar a opção para fazer download do arquivo. Fazemos isso utilizando as seguintes tags: <br> <strong>&lt;a href=</strong> "midia/all the fixings zachariah hickman.mp3"&gt;Clic aqui para baixar o arquivo MP3</p>
+
+</body>
+</html>

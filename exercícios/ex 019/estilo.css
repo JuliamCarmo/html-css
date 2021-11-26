@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*
+Em Html é ID    = em CSS é #
+Em Html é Class = em CSS é .
+*/
+
+/*
+Podemos adicionar a tag <span class=""> </span> em uma palavra especifica, e ela ficara de acordo com a class determinada.
+Podemos ainda tambem adicionarmos mais de uma class ao mesmo elemento. 
+*/
+body{
+    background-image: linear-gradient(to right, #BE92FF, #9285E8, #9FACFF, #85ACE8, #92DAFF);
+
+    font-family: 'Oswald', sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+   }
+   
+   h1{
+       color: #332e52;
+   }
+
+   h1#pricipal {
+       text-align: center;
+       background-color: #c39bff;
+   }
+
+   h2{
+       color: #3c2c53;
+   }
+
+   p{
+       text-align: justify;
+   }
+   .basico{
+    color: #2d9999;
+   }
+
+   .intermediario{
+    color: #c6c912;
+   }
+
+   .avancado{
+    color: #aa1a1a;
+   }
