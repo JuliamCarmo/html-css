@@ -9,35 +9,51 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-size: cover;
-      background: black url(imagens/mapamundi.png) center top no-repeat fixed;
+    }
+
+    table {
+      width: 1000px;
+      height: 70px;
+      border-collapse: collapse;
       color: white;
+      position: relative;
     }
 
     caption {
       font-size: 1.5em;
-
+      font-weight: bold;
+      padding: 10px;
+      background-color: lightgrey;
+      color: black;
     }
 
-    h1 {
-      text-align: center;
+    td,
+    th {
+      border: 1px solid black;
+      padding: 10px;
     }
 
-    table {
-      border-collapse: collapse;
+    thead,
+    tfoot {
+      background-color: rgb(73, 73, 73);
       color: white;
     }
 
-    th {
-      height: 40px;
-      border: 2px solid black;
-      background-color: cornflowerblue;
+    thead>tr>th {
+      position: sticky;
+      top: -2px;
+      background-color: rgb(73, 73, 73);
     }
 
-    td {
-      width: 500px;
-      border: 1px solid black;
-      padding: 8px;
+    tbody>tr:nth-child(2n) {
+      /* Também podemos usar "even" (2n-1) ou "odd"(2n) */
+      background-color: lightgrey;
+      color: black;
+    }
+
+    tbody>tr:nth-child(2n-1) {
+      background-color: white;
+      color: black;
     }
   </style>
 </head>
@@ -55,12 +71,8 @@
       TFOOT
           TR, TD, TH
   -->
-  <!---
-  A tag Scope = "col" pode ser usada para dados que vão abaixo da linha, isto é na mesma coluna.
-  A tag Scope = "row" pode ser usada para dados que estão na mesma linha.
-  -->
   <table>
-    <caption>População federativa</caption>
+    <caption><strong>População das unidades federativas</strong></caption>
     <thead>
       <tr>
         <th>Estado</th>
@@ -238,6 +250,14 @@
       <td><strong>209,5 milhões</strong></td>
     </tfoot>
   </table>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam perspiciatis consequatur impedit reprehenderit aliquam omnis neque itaque unde minus temporibus sit eligendi asperiores amet, minima doloremque? Quibusdam, deserunt exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus? Quam repellat, optio tempore esse et eos. Explicabo sunt, eligendi, maiores, nihil ducimus quisquam modi nesciunt vel nisi deserunt consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem ratione eum, error sint aut dolorum suscipit sit ullam enim architecto sapiente maxime similique cupiditate perferendis quod modi animi quaerat.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam perspiciatis consequatur impedit reprehenderit aliquam omnis neque itaque unde minus temporibus sit eligendi asperiores amet, minima doloremque? Quibusdam, deserunt exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus? Quam repellat, optio tempore esse et eos. Explicabo sunt, eligendi, maiores, nihil ducimus quisquam modi nesciunt vel nisi deserunt consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem ratione eum, error sint aut dolorum suscipit sit ullam enim architecto sapiente maxime similique cupiditate perferendis quod modi animi quaerat.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam perspiciatis consequatur impedit reprehenderit aliquam omnis neque itaque unde minus temporibus sit eligendi asperiores amet, minima doloremque? Quibusdam, deserunt exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus? Quam repellat, optio tempore esse et eos. Explicabo sunt, eligendi, maiores, nihil ducimus quisquam modi nesciunt vel nisi deserunt consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem ratione eum, error sint aut dolorum suscipit sit ullam enim architecto sapiente maxime similique cupiditate perferendis quod modi animi quaerat.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, ipsam perspiciatis consequatur impedit reprehenderit aliquam omnis neque itaque unde minus temporibus sit eligendi asperiores amet, minima doloremque? Quibusdam, deserunt exercitationem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus? Quam repellat, optio tempore esse et eos. Explicabo sunt, eligendi, maiores, nihil ducimus quisquam modi nesciunt vel nisi deserunt consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque autem ratione eum, error sint aut dolorum suscipit sit ullam enim architecto sapiente maxime similique cupiditate perferendis quod modi animi quaerat.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae culpa repellendus laboriosam amet hic libero cum? Quidem, quo mollitia veniam obcaecati ipsam aspernatur harum non in nemo natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorem ratione quae accusantium tempora illum, aut iusto ab explicabo ducimus doloremque. At, nesciunt ipsa tenetur earum repudiandae cum sit ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum deleniti accusamus incidunt, quas quis eius libero soluta mollitia quibusdam magnam commodi eligendi fugit illo repudiandae laboriosam ipsa temporibus. Similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur nesciunt quibusdam quae similique a dignissimos tenetur nulla aperiam doloremque asperiores, corporis dicta tempore eveniet enim numquam magnam molestiae eius.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae culpa repellendus laboriosam amet hic libero cum? Quidem, quo mollitia veniam obcaecati ipsam aspernatur harum non in nemo natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorem ratione quae accusantium tempora illum, aut iusto ab explicabo ducimus doloremque. At, nesciunt ipsa tenetur earum repudiandae cum sit ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum deleniti accusamus incidunt, quas quis eius libero soluta mollitia quibusdam magnam commodi eligendi fugit illo repudiandae laboriosam ipsa temporibus. Similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur nesciunt quibusdam quae similique a dignissimos tenetur nulla aperiam doloremque asperiores, corporis dicta tempore eveniet enim numquam magnam molestiae eius.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae culpa repellendus laboriosam amet hic libero cum? Quidem, quo mollitia veniam obcaecati ipsam aspernatur harum non in nemo natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorem ratione quae accusantium tempora illum, aut iusto ab explicabo ducimus doloremque. At, nesciunt ipsa tenetur earum repudiandae cum sit ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum deleniti accusamus incidunt, quas quis eius libero soluta mollitia quibusdam magnam commodi eligendi fugit illo repudiandae laboriosam ipsa temporibus. Similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur nesciunt quibusdam quae similique a dignissimos tenetur nulla aperiam doloremque asperiores, corporis dicta tempore eveniet enim numquam magnam molestiae eius.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae culpa repellendus laboriosam amet hic libero cum? Quidem, quo mollitia veniam obcaecati ipsam aspernatur harum non in nemo natus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse dolorem ratione quae accusantium tempora illum, aut iusto ab explicabo ducimus doloremque. At, nesciunt ipsa tenetur earum repudiandae cum sit ab. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti harum deleniti accusamus incidunt, quas quis eius libero soluta mollitia quibusdam magnam commodi eligendi fugit illo repudiandae laboriosam ipsa temporibus. Similique? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad pariatur nesciunt quibusdam quae similique a dignissimos tenetur nulla aperiam doloremque asperiores, corporis dicta tempore eveniet enim numquam magnam molestiae eius.</p>
 </body>
 
 </html>
