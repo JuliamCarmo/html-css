@@ -18,7 +18,14 @@
       text-align: center;
     }
 
-    td {
+    caption {
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    td,
+    th {
       border: 1px solid black;
     }
 
@@ -31,29 +38,35 @@
 <body>
   <h1>Mesclagem de células com letrinhas</h1>
   <table>
-    <tr>
-      <td colspan="4" class="cor">A</td>
-      <td rowspan="4" class="cor">B</td>
-    </tr>
-    <tr>
-      <td rowspan="4" class="cor">C</td>
-      <td>D</td>
-      <td>E</td>
-      <td>F</td>
-    </tr>
-    <tr>
-      <td>G</td>
-      <td>H</td>
-      <td>I</td>
-    </tr>
-    <tr>
-      <td>J</td>
-      <td>L</td>
-      <td>M</td>
-    </tr>
-    <tr>
-      <td colspan="4" class="cor">N</td>
-    </tr>
+    <caption>Tabela alfabética</caption>
+    <thead>
+      <th colspan="5" class="cor">Tabela002</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="4" class="cor">A</td>
+        <td rowspan="4" class="cor">B</td>
+      </tr>
+      <tr>
+        <td rowspan="4" class="cor">C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>J</td>
+        <td>L</td>
+        <td>M</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="cor">N</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 

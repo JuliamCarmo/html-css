@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    caption {
+      padding: 10px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    table {
+      width: 700px;
+      padding: 15px;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      padding: 10px;
+    }
+
+    .destaque {
+      font-weight: bold;
+      text-align: center;
+      background-color: lightgrey;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Exercício de Tabela</h1>
+  <table>
+    <caption>Filmes Favoritos</caption>
+    <thead>
+      <th scope="col" class="destaque">Grupos</th>
+      <th scope="col" class="destaque">Nomes</th>
+      <th scope="colgroup" colspan="3" class="destaque">Filmes</th>
+    </thead>
+    <hbody>
+      <tr>
+        <th rowspan="3" scope="rowgroup" class="destaque">Mulheres</th>
+        <td>Ana Vitória</td>
+        <td>Alien</td>
+        <td>Rambo</td>
+        <td>Vingadores</td>
+      </tr>
+      <tr>
+        <td>Beatris Souza</td>
+        <td>Hulk</td>
+        <td>Inception</td>
+        <td>Batman</td>
+      </tr>
+      <tr>
+        <td>Helena Garcia</td>
+        <td>Oblivion</td>
+        <td>Matriz</td>
+        <td>Big Hero</td>
+      </tr>
+      <tr>
+        <th rowspan="3" scope="rowgroup" class="destaque">Homens</th>
+        <td>Gabriel Lopes</td>
+        <td> Demolidor</td>
+        <td>Justiceiro</td>
+        <td>Jessica Jones</td>
+      </tr>
+      <tr>
+        <td>Heitor Silva</td>
+        <td>Star Wars</td>
+        <td>Dark</td>
+        <td>Gladiador</td>
+      </tr>
+      <tr>
+        <td>Lucas Duarte</td>
+        <td>Sem saída</td>
+        <td>Dangal</td>
+        <td>Amnésia</td>
+      </tr>
+    </hbody>
+    <tfoot>
+      <th colspan="4" scope="row" class="destaque">Total</th>
+      <td>000</td>
+    </tfoot>
+  </table>
+</body>
+
+</html>

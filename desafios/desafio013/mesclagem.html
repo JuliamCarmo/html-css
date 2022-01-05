@@ -18,7 +18,14 @@
       text-align: center;
     }
 
-    td {
+    caption {
+      padding: 10px;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
+
+    td,
+    th {
       border: 1px solid black;
     }
 
@@ -31,31 +38,37 @@
 <body>
   <h1>Mesclagem de células em tabelas</h1>
   <table>
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td rowspan="2" class="cor">3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-    <tr>
-      <td colspan="3" class="cor">8</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <td rowspan="2" class="cor">10</td>
-      <td colspan="2" class="cor">11</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <td>13</td>
-      <td>14</td>
-      <td>15</td>
-    </tr>
+    <caption>Tabela numérica</caption>
+    <thead>
+      <th colspan="4" class="cor">Tabela001</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+        <td rowspan="2" class="cor">3</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td colspan="3" class="cor">8</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="cor">10</td>
+        <td colspan="2" class="cor">11</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 
