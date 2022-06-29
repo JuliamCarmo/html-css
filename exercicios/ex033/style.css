@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+body{
+  margin: 20px;
+}
+
+ul, ol{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+dd, dl{
+  margin: 0px;
+}
