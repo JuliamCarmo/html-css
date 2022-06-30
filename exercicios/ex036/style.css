@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.px{
+  font-size: 32px;
+}
+
+html{
+  font-size: 200%;
+}
+
+div{
+  font-size: 200%;
+}
+
+.em{
+  font-size: 2em;/*O tamanho do "em" é em relação ao pai (nesse caso a tag "div")*/
+}
+
+.rem{
+  font-size: 2rem; /*O tamanho do "rem" é em relação ao tamanho do html*/
+}
