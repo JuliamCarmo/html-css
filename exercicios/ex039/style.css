@@ -1,2 +1,8 @@
 @charset "UTF-8";
 
+.bicicleta{
+  height: 2000px;
+  background-color: lightgreen;
+  background-image: url(imagens/yoda.jpg);
+
+}
