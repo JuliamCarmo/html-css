@@ -1,0 +1,33 @@
+@charset  "UTF-8";
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+h1{
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+@media (max-width: 600px){
+  div{
+    grid-template-columns: 1fr;/*Lembrando que a ordem importa*/
+  }
+  h1{
+    background: lightgray;
+  }
+}
+
+/*podemos colocar "," ou "and "e continuar ao comandos*/
+@media (min-width: 1000px){
+  html{
+    font-size: 150%;
+  }
+}
