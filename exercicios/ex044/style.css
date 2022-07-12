@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+section > h2{
+  color: tomato;
+}
+
+article{
+  background-color: lightblue;
+  padding: 10px;
+}
+
+p{
+  margin: 0px;
+}
+p + p{
+  margin-top: 20px;
+}
