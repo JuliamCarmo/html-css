@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+  :root{ 
+    --texto1: #84e;
+    --texto2: #111;
+    --fundo1: #fff;
+    --fundo2: #caf;
+    --borda: 4px solid;
+  }
+
+@media(prefers-color-scheme: dark){
+  :root{
+    --texto1: #fff;
+    --texto2: #fff;
+    --fundo1: #222;
+    --fundo2: #222;
+    --borda: 4px solid;
+  }
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background-color: var(--fundo1);
+}
+
+h1{
+  color: var(--texto1);
+  background-color: var(--fundo2);
+  border: var(--borda);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+p{
+  color: var(--texto2);
+}
