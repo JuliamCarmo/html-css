@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+p [required]{
+  border: 2px solid tomato;
+}
+
+a[href="https://wwww.google.com"]{
+  border: 2px solid lightblue;
+}
+
+[href^="/"]{
+  background-color: aquamarine;
+}
+/*Começar com "^" terminar com "$"*/
